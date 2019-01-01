@@ -7,27 +7,45 @@ const argv = require('yargs')
 	.version('1.0.0')
 	.usage('Usage: $0 --file <filename>')
 	.example('$ $0 -v........................show version')
+	.choices('action', [ 'help', 'version' ])
 	.help('help')
 	.demandOption([ 'file' ])
 	.describe('file', '<filename>')
 	.default('debug', false)
 	.alias('f', 'file')
 	.alias('h', 'help')
-	.alias('v', 'version');
+	.alias('v', 'version')
+	.alias('d', 'debug')
+	.default('debug', false);
 argv.argv;
 global.DEBUG_LOG_LEVEL = argv.argv.debug;
 
 DEBUG_LOG('argv.argv = ', JSON.stringify(argv.argv, null, 4));
 LOG('----------------------------------------------------------');
 
-switch (argv.argv.action) {
-	case 'file': {
-		// to check this action please run:
-		// node Hw3/utils/stream.js --debug -a reverse <Hw3/utils/data/aaa.txt >Hw3/utils/data/bbb.txt
-		reverseAction();
-		break;
-	}
+if (argv.argv.file) {
+	// to check this action please run:
+	// node Hw3/utils/stream.js --debug -a reverse <Hw3/utils/data/aaa.txt >Hw3/utils/data/bbb.txt
+	const buffer = fs.readFileSync(argv.argv.file);
+	const str = buffer.toString();
+	DEBUG_LOG('action = "file". Input file content =\n', str);
 
-	default:
-		LOG('Error: Wrong command = ', argv.argv.action);
+	const lines = str.split('\n');
+	const halfLength = (lines.length / 2) | 0;
+	const newLines = [];
+	for (let i = 0; i < halfLength; i += 1) {
+		const eng = lines[i].trim();
+		if (eng.indexOf('"') !== -1) {
+			throw new Error(
+				'Dablequote charracters are forbidden!\nLine #' + (i + 1) + '\nLine = ' + eng,
+			);
+		}
+		const rus = lines[i + halfLength].trim();
+		const pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n}\n';
+		newLines.push(pair);
+	}
+	DEBUG_LOG('newLines =\n', newLines);
+	DEBUG_LOG('----------------------------------------------------------');
+	process.stdout.write(newLines.join(''));
+	LOG('Conversion was successfully completed!');
 }
