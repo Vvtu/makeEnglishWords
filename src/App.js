@@ -30,7 +30,8 @@ if (argv.argv.file) {
 	const str = buffer.toString();
 	DEBUG_LOG('action = "file". Input file content =\n', str);
 
-	const lines = str.split('\n');
+	const lines = str.split('\n').filter((line) => line !== '');
+	DEBUG_LOG('lines = \n', JSON.stringify(lines));
 	const halfLength = (lines.length / 2) | 0;
 	const newLines = [];
 	for (let i = 0; i < halfLength; i += 1) {
@@ -41,11 +42,14 @@ if (argv.argv.file) {
 			);
 		}
 		const rus = lines[i + halfLength].trim();
-		const pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n}\n';
+		const pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n},\n';
 		newLines.push(pair);
 	}
 	DEBUG_LOG('newLines =\n', newLines);
 	DEBUG_LOG('----------------------------------------------------------');
+
+	process.stdout.write('\n\n\n');
 	process.stdout.write(newLines.join(''));
+	process.stdout.write('\n\n\n');
 	LOG('Conversion was successfully completed!');
 }

@@ -1,0 +1,96 @@
+DEBUG_LOG:  argv.argv =  {
+    "_": [],
+    "d": true,
+    "debug": true,
+    "f": "111.txt",
+    "file": "111.txt",
+    "$0": "src/App.js"
+}
+LOG:  ----------------------------------------------------------
+DEBUG_LOG:  action = "file". Input file content =
+ Tom is looking for his key. He can't find it. He has lost his key. //present perfect// This means that he doesn't have his key now.
+Now Tom has found his key. He has it now. Has he lost his key? No, he has found it. Did he lose his key? Yes, he did. He lost his key. //past simple// but now he has found it. //present perfect//
+I've done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today / this week / since 2007.
+I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday / last week / from 2007 to 2010.
+It hasn't rained this week.
+Have you seen Anna this morning? (It is still morning)
+Have you seen Tim recently?
+It didn't rain last week.
+Did you see Anna this morning? (It is now afternoon of evening)
+Did you see Tim on Sunday?
+Том ищет свой ключ. Он не может его найти. Он потерял свой ключ. // present perfect / / это означает, что у него нет ключа.
+Теперь Том нашел свой ключ. Теперь она у него. Он потерял свой ключ? Нет, он уже нашел его. Он потерял свой ключ? Да, это так. Он потерял свой ключ. //прошедшее простое// но теперь он нашел его. //настоящее совершенное время//
+Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня / на этой неделе / с 2007 года.
+Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера / на прошлой неделе / с 2007 по 2010 год.
+На этой неделе не было дождя.
+Вы видели Анну сегодня утром? (Еще утро)
+Ты видела Тима в последнее время?
+На прошлой неделе дождя не было.
+Вы видели Анну сегодня утром? (Сейчас полдень вечера)
+Вы видели время в воскресенье?
+
+
+DEBUG_LOG:  newLines =
+ [ '{\n  rus: {js|Теперь Том нашел свой ключ. Теперь она у него. Он потерял свой ключ? Нет, он уже нашел его. Он потерял свой ключ? Да, это так. Он потерял свой ключ. //прошедшее простое// но теперь он нашел его. //настоящее совершенное время//|js},\n  eng: "Tom is looking for his key. He can\'t find it. He has lost his key. //present perfect// This means that he doesn\'t have his key now.",\n},\n',
+  '{\n  rus: {js|Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня / на этой неделе / с 2007 года.|js},\n  eng: "Now Tom has found his key. He has it now. Has he lost his key? No, he has found it. Did he lose his key? Yes, he did. He lost his key. //past simple// but now he has found it. //present perfect//",\n},\n',
+  '{\n  rus: {js|Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера / на прошлой неделе / с 2007 по 2010 год.|js},\n  eng: "I\'ve done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today / this week / since 2007.",\n},\n',
+  '{\n  rus: {js|На этой неделе не было дождя.|js},\n  eng: "I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday / last week / from 2007 to 2010.",\n},\n',
+  '{\n  rus: {js|Вы видели Анну сегодня утром? (Еще утро)|js},\n  eng: "It hasn\'t rained this week.",\n},\n',
+  '{\n  rus: {js|Ты видела Тима в последнее время?|js},\n  eng: "Have you seen Anna this morning? (It is still morning)",\n},\n',
+  '{\n  rus: {js|На прошлой неделе дождя не было.|js},\n  eng: "Have you seen Tim recently?",\n},\n',
+  '{\n  rus: {js|Вы видели Анну сегодня утром? (Сейчас полдень вечера)|js},\n  eng: "It didn\'t rain last week.",\n},\n',
+  '{\n  rus: {js|Вы видели время в воскресенье?|js},\n  eng: "Did you see Anna this morning? (It is now afternoon of evening)",\n},\n',
+  '{\n  rus: {js||js},\n  eng: "Did you see Tim on Sunday?",\n},\n',
+  '{\n  rus: {js||js},\n  eng: "Том ищет свой ключ. Он не может его найти. Он потерял свой ключ. // present perfect / / это означает, что у него нет ключа.",\n},\n' ]
+DEBUG_LOG:  ----------------------------------------------------------
+
+
+
+{
+  rus: {js|Теперь Том нашел свой ключ. Теперь она у него. Он потерял свой ключ? Нет, он уже нашел его. Он потерял свой ключ? Да, это так. Он потерял свой ключ. //прошедшее простое// но теперь он нашел его. //настоящее совершенное время//|js},
+  eng: "Tom is looking for his key. He can't find it. He has lost his key. //present perfect// This means that he doesn't have his key now.",
+},
+{
+  rus: {js|Сегодня я проделал большую работу. // Используйте present perfect в течение периода времени, который продолжается до сих пор. Например: сегодня / на этой неделе / с 2007 года.|js},
+  eng: "Now Tom has found his key. He has it now. Has he lost his key? No, he has found it. Did he lose his key? Yes, he did. He lost his key. //past simple// but now he has found it. //present perfect//",
+},
+{
+  rus: {js|Я вчера много работал.// Мы используем прошлое простое для законченного времени в прошлом. Например: вчера / на прошлой неделе / с 2007 по 2010 год.|js},
+  eng: "I've done a lot of work today. //Use present perfect for a period of time that continues until now. For example: today / this week / since 2007.",
+},
+{
+  rus: {js|На этой неделе не было дождя.|js},
+  eng: "I did a lot of work yesterday.// We use the past simple for a finished time in the past. For example: yesterday / last week / from 2007 to 2010.",
+},
+{
+  rus: {js|Вы видели Анну сегодня утром? (Еще утро)|js},
+  eng: "It hasn't rained this week.",
+},
+{
+  rus: {js|Ты видела Тима в последнее время?|js},
+  eng: "Have you seen Anna this morning? (It is still morning)",
+},
+{
+  rus: {js|На прошлой неделе дождя не было.|js},
+  eng: "Have you seen Tim recently?",
+},
+{
+  rus: {js|Вы видели Анну сегодня утром? (Сейчас полдень вечера)|js},
+  eng: "It didn't rain last week.",
+},
+{
+  rus: {js|Вы видели время в воскресенье?|js},
+  eng: "Did you see Anna this morning? (It is now afternoon of evening)",
+},
+{
+  rus: {js||js},
+  eng: "Did you see Tim on Sunday?",
+},
+{
+  rus: {js||js},
+  eng: "Том ищет свой ключ. Он не может его найти. Он потерял свой ключ. // present perfect / / это означает, что у него нет ключа.",
+},
+
+
+
+LOG:  Conversion was successfully completed!
