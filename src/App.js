@@ -30,18 +30,18 @@ if (argv.argv.file) {
 	const str = buffer.toString();
 	DEBUG_LOG('action = "file". Input file content =\n', str);
 
-	const lines = str.split('\n').filter((line) => line !== '');
+	const lines = str.split('\n').map((line) => line.trim()).filter((line) => line !== '');
 	DEBUG_LOG('lines = \n', JSON.stringify(lines));
 	const halfLength = (lines.length / 2) | 0;
 	const newLines = [];
 	for (let i = 0; i < halfLength; i += 1) {
-		const eng = lines[i].trim();
+		const eng = lines[i];
 		if (eng.indexOf('"') !== -1) {
 			throw new Error(
 				'Dablequote charracters are forbidden!\nLine #' + (i + 1) + '\nLine = ' + eng,
 			);
 		}
-		const rus = lines[i + halfLength].trim();
+		const rus = lines[i + halfLength];
 		const pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n},\n';
 		newLines.push(pair);
 	}
