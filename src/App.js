@@ -26,6 +26,9 @@ LOG('----------------------------------------------------------');
 if (argv.argv.file) {
 	// to check this action please run:
 	// node Hw3/utils/stream.js --debug -a reverse <Hw3/utils/data/aaa.txt >Hw3/utils/data/bbb.txt
+	if (!isValidPath(argv.argv.file)) {
+		throw new Error('Invalid path: ' + argv.argv.file);
+	}
 	const buffer = fs.readFileSync(argv.argv.file);
 	const str = buffer.toString();
 	DEBUG_LOG('action = "file". Input file content =\n', str);

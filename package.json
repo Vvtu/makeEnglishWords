@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "node src/App.js -d -f 111.txt",
 		"start222": "nodemon --exec babel-node --presets env,stage-2 src/App.js -d -f 111.txt",
-		"test": "jest --watch"
+		"test": "jest --watch",
+		"lint": "eslint --ignore-path .gitignore ."
 	},
 	"repository": {
 		"type": "git",
@@ -23,6 +24,8 @@
 		"babel-preset-env": "^1.7.0",
 		"babel-preset-stage-2": "^6.24.1",
 		"babel-register": "^6.26.0",
+		"eslint": "^5.12.0",
+		"eslint-config-strongloop": "^2.1.0",
 		"follow-redirects": "^1.6.0",
 		"jest": "^23.6.0"
 	}
