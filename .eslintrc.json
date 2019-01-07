@@ -1,6 +1,8 @@
 {
 	"parserOptions": {
-		"ecmaVersion": 2017
+		"ecmaVersion": 2017,
+		"sourceType": "module",
+		"allowImportExportEverywhere": true
 	},
 	"env": {
 		"es6": true
@@ -8,7 +10,7 @@
 	"extends": "strongloop",
 	"rules": {
 		"strict": 0,
-		"max-len": [ 2, 120, 8 ],
+		"max-len": [ 2, 300, 8 ],
 		"indent": 0
 	}
 }
