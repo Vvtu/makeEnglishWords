@@ -12,10 +12,12 @@ const argv = require('yargs')
 	.demandOption([ 'file' ])
 	.describe('file', '<filename>')
 	.default('debug', false)
+	.default('js', false)
 	.alias('f', 'file')
 	.alias('h', 'help')
 	.alias('v', 'version')
 	.alias('d', 'debug')
+	.alias('j', 'js')
 	.default('debug', false);
 argv.argv;
 global.DEBUG_LOG_LEVEL = argv.argv.debug;
@@ -45,7 +47,12 @@ if (argv.argv.file) {
 			);
 		}
 		const rus = lines[i + halfLength];
-		const pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n},\n';
+		let pair;
+		if (argv.argv.js) {
+			pair = '{\n  rus: "' + rus + '",\n  eng: "' + eng + '",\n},\n';
+		} else {
+			pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n},\n';
+		}
 		newLines.push(pair);
 	}
 	DEBUG_LOG('newLines =\n', newLines);
