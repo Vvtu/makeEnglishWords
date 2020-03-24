@@ -1,37 +1,31 @@
-I'm organizing some insurance in case I get ill.
-I'm very busy so please don't disturb me unless it's an emergency.
-Provided that sales don't start falling, we'll reach our targets this year.
-I should be able to get there by 10:30, but I'll let you know if there's a problem.
-As long as we get the funding, we can go ahead with the project in October.
+Scrum is a process framework for developing, delivering, and sustaining complex products.
 
-if we got a bit more help, we could finish on time.
-I'll help you providing you do my shift on Friday.
-Supposing they offered you a job, would you take it?
-I'll be home by 5:30 unless the meeting finished late.
+The definition of Scrum consists of Scrum's roles, events, artefacts, and the rules that bind them together.
 
-We use 'in case' to talk about action taken to avoid something.: I'll take a spare battery in case the main runs out.
+Three pillars uphold every implementation of empirical process control: transparency, inspection and adaptation.
 
-If I'm not promoted, I'll leave the company.
+Transparency means that significant aspects of the developing process must be visible to those responsible for the outcome.
 
-if you order 20 units, we will give you a 15% discount.
+Those performing the work and those inspecting the resulting increment must share a common definition of "Done". It is important for transparency.
 
-If we hurry, we can get there in time.
+Inspection means that Scrum users must frequently inspect Scrum artefacts and progress toward a Sprint Goal to detect undesirable variances.
 
-Я организую страховку на случай, если заболею.
-Я очень занята, поэтому, пожалуйста, не беспокойте меня, если это не чрезвычайная ситуация.
-При условии, что продажи не начнут падать, мы достигнем наших целей в этом году.
-Я должен быть в состоянии добраться туда к 10:30, но я дам вам знать, если возникнут проблемы.
-Пока мы получаем финансирование, мы можем продолжить проект в октябре.
+Adaptation means that the process must be adjusted when an inspector determines that one or more aspects of the developing process deviate outside acceptable limits and the resulting product will be unacceptable.
 
-если нам помогут, мы сможем закончить вовремя.
-Я помогу тебе, обеспечу мою смену в пятницу.
-Предположим, они предложат тебе работу, ты согласишься?
-Я буду дома к 5:30, если только совещание закончилось поздно.
+Scrum prescribes four formal events for inspection and adaptation: Sprint planning, Daily Scrum, Sprint review, Sprint retrospective.
 
-Мы используем "на всякий случай", чтобы поговорить о действиях, предпринятых, чтобы чего-то избежать.: Я возьму запасную батарею на случай, если основная закончится.
+Scrum - это процессный фрейворк для разработки, поставки и поддержания сложных продуктов.
 
-Если меня не повысят, я уйду из компании.
+Определение Scrum состоит из ролей Scrum, событий, артефактов и правил, которые связывают их вместе.
 
-если вы приказываете 20 блоков, то мы передадим Вам скидка 15%.
+Три столпа поддерживают любой процесс эмпирического контроля: прозрачность, инспекция и адаптация.
 
-Если поторопимся, успеем вовремя.
+Транспарентность означает, что важные аспекты процесса разработки должны быть видны тем, кто несет ответственность за конечный результат.
+
+Те, кто выполняет эту работу, и те, кто проверяет полученное улучшение, должны иметь общее определение "сделано". Это очень важно для прозрачности.
+
+Инспекция означает, что пользователи Scrum должны часто проверять артефакты Scrum и прогресс на пути к цели спринта, чтобы обнаружить нежелательные отклонения.
+
+Адаптация означает, что процесс должен быть скорректирован, когда инспектор определяет, что один или несколько аспектов процесса разработки отклоняются за пределы допустимых пределов и полученный продукт будет неприемлемым.
+
+Scrum предписывает четыре официальных события для проверки и адаптации: планирование спринта, ежедневный Scrum, обзор спринта, ретроспектива спринта.

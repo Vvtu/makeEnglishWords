@@ -41,15 +41,15 @@ if (argv.argv.file) {
 	const newLines = [];
 	for (let i = 0; i < halfLength; i += 1) {
 		const eng = lines[i];
-		if (eng.indexOf('"') !== -1) {
-			throw new Error(
-				'Dablequote charracters are forbidden!\nLine #' + (i + 1) + '\nLine = ' + eng,
-			);
-		}
+		// if (eng.indexOf('"') !== -1) {
+		// 	throw new Error(
+		// 		'Dablequote charracters are forbidden!\nLine #' + (i + 1) + '\nLine = ' + eng,
+		// 	);
+		// }
 		const rus = lines[i + halfLength];
 		let pair;
 		if (argv.argv.js) {
-			pair = '{\n  rus: "' + rus + '",\n  eng: "' + eng + '",\n},\n';
+			pair = `{\n  rus: \`${rus}\`,\n  eng: \`${eng}\`,\n},\n`;
 		} else {
 			pair = '{\n  rus: {js|' + rus + '|js},\n  eng: "' + eng + '",\n},\n';
 		}
