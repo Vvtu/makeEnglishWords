@@ -27,7 +27,7 @@
 		"babel-register": "^6.26.0",
 		"eslint": "^5.12.0",
 		"eslint-config-strongloop": "^2.1.0",
-		"follow-redirects": "^1.6.0",
+		"follow-redirects": "^1.14.7",
 		"jest": "^24.8.0"
 	}
 }
